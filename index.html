@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/09ed0ebd6f.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" href="imagens/spotify.png">
+  <link rel="stylesheet" href="styles.css" />
+  <title>Spotify - Buscar</title>
+</head>
+<body>
+  <header class="top-bar">
+    <div class="logo">
+      <i class="fa-brands fa-spotify"></i>
+    </div>
+
+    <a href="#" class="home-button">
+      <i class="fas fa-house"></i>
+    </a>
+
+    <div class="search-bar">
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <input type="text" placeholder="O que você quer ouvir?" />
+      <i class="fa-solid fa-sliders"></i>
+    </div>
+
+    <div class="top-actions">
+      <a href="#">Instalar aplicativo</a>
+      <i class="fa-regular fa-bell"></i>
+      <i class="fa-solid fa-user-group"></i>
+      <div class="profile-circle">
+        <img src="/imagens/Davi Brito1.png" alt="Foto de perfil" />
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <nav class="sidebar">
+      <div class="nav-library">
+        <p>Sua Biblioteca</p>
+        <span class="add-icon">+</span>
+      </div>
+
+      <div class="nav-playlist">
+        <h5>Crie sua Primeira Playlist</h5>
+        <p>É fácil, vamos te ajudar</p>
+        <button>Criar Playlist</button>
+      </div>
+
+      <div class="nav-podcast">
+        <h5>Que tal Seguir um Podcast?</h5>
+        <p>Avisaremos você sobre nossos episódios</p>
+        <button>Explore Podcast</button>
+      </div>
+
+      <div class="nav-footer">
+        <a href="#">Legal</a>
+        <a href="#">Centro de Privacidade</a>
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Cookies</a>
+        <a href="#">Sobre anúncios</a>
+        <a href="#">Acessibilidade</a>
+        <a href="#" class="highlight-link">Cookies</a>
+      </div>
+
+      <button class="nav-lang-button">
+        <i class="fa-solid fa-globe"></i>
+        Português do Brasil
+      </button>
+    </nav>
+
+    <main class="main-content">
+      <section>
+        <div class="section-header">
+          <h2>Artistas Populares</h2>
+          <a href="#" class="show-all">Mostrar tudo</a>
+        </div>
+        <div class="artists-grid"></div>
+
+        <div class="section-header">
+          <h2>Álbuns Populares</h2>
+          <a href="#" class="show-all">Mostrar tudo</a>
+        </div>
+        <div class="albums-grid"></div>
+
+        <div class="section-header">
+          <h2>Melhores DVDs</h2>
+          <a href="#" class="show-all">Mostrar tudo</a>
+        </div>
+        <div class="dvds-grid"></div>
+      </section>
+    </main>
+  </div>
+
+  <div class="player-bar">
+    <div class="now-playing">
+      <div class="track-info">
+        <img src="./imagens/alb-resenha-do-arrocha.png" alt="Capa do álbum">
+        <div class="track-details">
+          <span class="track-title">Resenha do arrocha 1.0</span>
+          <span class="track-artist">J.Eskine</span>
+        </div>
+        <button class="like-button">
+          <i class="far fa-heart"></i>
+        </button>
+      </div>
+    </div>
+
+    <div class="player-controls">
+      <div class="control-buttons">
+        <button class="control-button shuffle"><i class="fas fa-random"></i></button>
+        <button class="control-button previous"><i class="fas fa-step-backward"></i></button>
+        <button class="control-button play"><i class="fas fa-play"></i></button>
+        <button class="control-button next"><i class="fas fa-step-forward"></i></button>
+        <button class="control-button repeat"><i class="fas fa-redo"></i></button>
+      </div>
+      <div class="progress-container">
+        <span class="time current">0:45</span>
+        <div class="progress-bar">
+          <div class="progress"></div>
+        </div>
+        <span class="time total">3:22</span>
+      </div>
+    </div>
+
+    <div class="volume-controls">
+      <button class="control-button"><i class="fas fa-list-ul"></i></button>
+      <button class="control-button"><i class="fas fa-volume-up"></i></button>
+      <div class="volume-bar">
+        <div class="volume-progress"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
